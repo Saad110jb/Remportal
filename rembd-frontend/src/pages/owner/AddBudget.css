@@ -1,0 +1,116 @@
+/* Container styling */
+.add-budget-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #ffffff, #f3f7ff);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  color: #000; /* Ensures general text is black */
+}
+
+/* Heading */
+.add-budget-container h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #3f51b5;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Success and error messages */
+.success {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error {
+  color: #c62828;
+  background-color: #fdecea;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styling */
+.add-budget-container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Group multiple inputs on one row */
+.add-budget-container form > div {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Full-width field */
+.add-budget-container form > div.full-width {
+  flex: 1 1 100%;
+}
+
+/* Label styling */
+.add-budget-container label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #000; /* Make label text black */
+}
+
+/* Input, select, and textarea */
+.add-budget-container input,
+.add-budget-container select,
+.add-budget-container textarea {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000; /* Make input text black */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.add-budget-container input:focus,
+.add-budget-container select:focus,
+.add-budget-container textarea:focus {
+  border-color: #3f51b5;
+  box-shadow: 0 0 8px rgba(63, 81, 181, 0.3);
+  outline: none;
+}
+
+/* Submit button */
+.add-budget-container button[type="submit"] {
+  flex: 1 1 100%;
+  padding: 14px 0;
+  background: linear-gradient(to right, #3f51b5, #5c6bc0);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-budget-container button[type="submit"]:hover {
+  background: linear-gradient(to right, #303f9f, #3949ab);
+  box-shadow: 0 6px 16px rgba(63, 81, 181, 0.4);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .add-budget-container form > div {
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,205 @@
+/* Reset & base styles */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* Prevent page scrolling on laptop/desktop screens */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;      /* full viewport height */
+  overflow: hidden;   /* disable scrolling on page */
+  background: #f0f4f8;
+}
+
+/* Main container fills viewport height with max width */
+.company-management {
+  width: 1000px;
+  height: 90vh;       /* take 90% of viewport height */
+  margin: 40px auto;
+  padding: 30px 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  color: #333;
+  animation: fadeInUp 0.6s ease forwards;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;   /* scroll inside if content is too tall */
+  justify-content: flex-start;
+}
+/* Heading */
+.company-management h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #1a202c;
+}
+
+/* Success & error messages */
+.success, .error {
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  user-select: none;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.success {
+  background-color: #e6fffa;
+  color: #2c7a7b;
+  border: 1.5px solid #2c7a7b;
+}
+
+.error {
+  background-color: #ffe6e6;
+  color: #c53030;
+  border: 1.5px solid #c53030;
+}
+
+/* Fade in message */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Form styles */
+form.company-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Form headings */
+form.company-form h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #2d3748;
+  border-bottom: 2px solid #2b6cb0;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+form.company-form h3:hover {
+  color: #2b6cb0;
+}
+
+/* Input wrapper: control width & layout */
+form.company-form > div {
+  flex: 1 1 45%;         /* grow/shrink with base width ~45% */
+  min-width: 280px;      /* minimum width to keep inputs readable */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #cbd5e0;
+  outline-offset: 2px;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.25s ease;
+  background: #f7fafc;
+  color: #2d3748;
+  user-select: text;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+/* Input focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  border-color: #2b6cb0;
+  box-shadow: 0 0 8px rgba(66, 153, 225, 0.5);
+  background: #fff;
+}
+
+/* Placeholder color */
+input::placeholder {
+  color: #a0aec0;
+  font-style: italic;
+}
+
+/* Subtle floating effect on hover */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(43, 108, 176, 0.15);
+}
+
+/* Submit button */
+button[type="submit"] {
+  flex: 1 1 100%;
+  padding: 14px 0;
+  margin-top: 10px;
+  background-color: #2b6cb0;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+  user-select: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #2c5282;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(43, 108, 176, 0.3);
+}
+
+button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  form.company-form > div {
+    flex: 1 1 100%;       /* stack inputs vertically on smaller screens */
+    min-width: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .company-management {
+    margin: 20px 12px;
+    padding: 20px 15px;
+  }
+}
+
+/* Fade in & slide up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

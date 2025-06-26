@@ -1,0 +1,135 @@
+.manage-lease-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.manage-lease-container h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #2e7d32;
+}
+
+.lease-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.lease-card {
+  background: #f9fdfb;
+  border-left: 4px solid #43a047;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.lease-card:hover {
+  transform: scale(1.01);
+}
+
+.lease-card div {
+  margin-bottom: 4px;
+  font-size: 13px;
+  color: #333;
+}
+
+.lease-loading,
+.lease-error {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.lease-error {
+  color: red;
+}
+
+.lease-error p {
+  background: #ffe6e6;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ffcccc;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  background-color: #1fc189;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.download-btn-wrapper {
+  text-align: right;
+  margin-bottom: 12px;
+}
+
+.download-btn {
+  padding: 7px 12px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #43a047;
+}
+
+.pagination button:hover:enabled {
+  background-color: #17a589;
+  transform: scale(1.04);
+}
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #3e8e41;
+}

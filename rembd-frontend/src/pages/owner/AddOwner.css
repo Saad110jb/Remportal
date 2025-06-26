@@ -1,0 +1,84 @@
+.add-owner-container {
+  background: #ffffff;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 35px 40px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.add-owner-container h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.add-owner-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-owner-container label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.add-owner-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.add-owner-container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+
+.add-owner-container p {
+  margin-top: -12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: red;
+}
+
+.add-owner-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-owner-container button:hover {
+  background-color: #0056b3;
+}
+
+.add-owner-container .success {
+  color: green;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.add-owner-container .error {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.add-owner-container .loading {
+  text-align: center;
+  font-size: 16px;
+  color: #007bff;
+}

@@ -1,0 +1,126 @@
+/* Container */
+.add-lease-container {
+  max-width: 480px;
+  margin: 30px auto;
+  padding: 24px 26px;
+  background: linear-gradient(145deg, #fdfdfd, #eef3f8);
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  font-family: 'Segoe UI', sans-serif;
+  border: 1px solid #d1d1d1;
+}
+
+/* Heading */
+.add-lease-container h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #1c1c1c;
+  margin-bottom: 18px;
+  font-weight: 700;
+  text-shadow: 0.5px 0.5px #ccc;
+}
+
+/* Loading & Error Message */
+.loading {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 16px;
+}
+
+.message.error {
+  background-color: #ffe3e3;
+  color: #b00020;
+  border-left: 4px solid #d90429;
+  padding: 10px 12px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+/* Search Input */
+.search-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  background-color: #f9f9f9;
+}
+
+.search-input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Lease Card */
+.lease-card {
+  background: linear-gradient(120deg, #ffffff, #f5f8fb);
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid #3498db;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lease-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Text */
+.lease-card h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.lease-card p {
+  margin: 4px 0;
+  font-size: 13.5px;
+  color: #3b3b3b;
+  line-height: 1.4;
+}
+
+.lease-card strong {
+  color: #111;
+  font-weight: 600;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  gap: 12px;
+}
+
+.pagination button {
+  padding: 7px 12px;
+  font-size: 13px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.pagination button:hover {
+  background: linear-gradient(to right, #0056b3, #003974);
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

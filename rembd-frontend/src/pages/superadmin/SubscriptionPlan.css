@@ -1,0 +1,80 @@
+.subscription-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+.subscription-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button {
+  background-color: #6c757d;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+.subscription-container h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.subscription-container label {
+  font-weight: 500;
+  display: block;
+  margin: 12px 0 4px;
+}
+
+.subscription-container select,
+.subscription-container input[type='checkbox'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.addon-section {
+  margin-bottom: 20px;
+}
+
+.addon-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.subscription-container button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.subscription-container button:hover {
+  background-color: #218838;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}

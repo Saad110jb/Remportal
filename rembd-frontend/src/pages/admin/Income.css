@@ -1,0 +1,200 @@
+/* Main Container */
+.income-container {
+  width: 60%;
+  min-width: 200px;
+  max-height: 90vh;           /* Limits height to 90% of viewport */
+  overflow-y: auto;           /* Enables vertical scroll if needed */
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0fdf4;
+  border-radius: 20px;
+  margin: 60px auto;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  color: #000;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Optional: Customize scrollbar (WebKit-based browsers) */
+.income-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.income-container::-webkit-scrollbar-track {
+  background: #e8f5e9;
+  border-radius: 10px;
+}
+
+.income-container::-webkit-scrollbar-thumb {
+  background-color: #4caf50;
+  border-radius: 10px;
+}
+
+
+
+/* Summary Box */
+.income-summary {
+  background: #e0f7ec;
+  padding: 20px 28px;
+  border-left: 6px solid #1fc189;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  box-shadow: 0 3px 12px rgba(31, 193, 137, 0.15);
+  transition: box-shadow 0.3s ease;
+  color: #000;
+}
+
+.income-summary h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+  color: #1b5e20;
+}
+
+/* Lease Title */
+.lease-title {
+  color: #111;
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 2px solid #30c48d;
+  padding-bottom: 6px;
+}
+
+/* Lease Cards List */
+.lease-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual Lease Card */
+.lease-card {
+  background-color: #ffffff;
+  padding: 18px 20px;
+  border-radius: 12px;
+  border-left: 5px solid #30c48d;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  color: #000;
+}
+
+.lease-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(31, 193, 137, 0.25);
+}
+
+.lease-card div {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #212121;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.pagination button {
+  background-color: #20b883;
+  color: #fff;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination button:hover:enabled {
+  background-color: #1aa270;
+  transform: scale(1.05);
+}
+
+.pagination button:disabled {
+  background-color: #c8e6c9;
+  cursor: not-allowed;
+}
+
+/* Loading and Error Messages */
+.loading,
+.error {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+  transition: color 0.3s ease;
+  color: #000;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+/* Download Button */
+.download-btn-wrapper {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  padding: 10px 16px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #43a047;
+  transform: scale(1.04);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .income-container {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .download-btn-wrapper {
+    text-align: center;
+  }
+}

@@ -1,0 +1,22 @@
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.notfound-container h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #dc3545; /* red for error */
+}
+
+.notfound-container p {
+  font-size: 1.25rem;
+  color: #555;
+}

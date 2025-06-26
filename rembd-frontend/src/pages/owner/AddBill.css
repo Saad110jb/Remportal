@@ -1,0 +1,76 @@
+.add-bill-container {
+  max-width: 380px;
+  margin: 20px auto;
+  padding: 14px 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.add-bill-container h2 {
+  text-align: center;
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.add-bill-container label {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.add-bill-container input,
+.add-bill-container select,
+.add-bill-container textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.add-bill-container textarea {
+  height: 60px; /* compact textarea */
+  resize: vertical;
+}
+
+.add-bill-container button {
+  width: 100%;
+  padding: 8px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.add-bill-container button:hover {
+  background-color: #0056b3;
+}
+
+.success-message,
+.error-message {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+.add-bill-container .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

@@ -1,0 +1,201 @@
+/* ========================================
+   Ultra-Advanced Glassmorphic Login Form v2.1
+   ======================================== */
+:root {
+  --bg-page: #eef2f5;
+  --form-bg: rgba(255, 255, 255, 0.25);
+  --form-glass: rgba(255, 255, 255, 0.4);
+  --form-blur: 16px;
+  --accent-start: #4caf50;
+  --accent-end:   #66bb6a;
+  --focus-color: #388e3c;
+  --error-color: #e53935;
+  --text-base:   #333;
+  --text-muted:  #777;
+  --transition:  0.3s ease;
+}
+
+/* Page background with background image and gradient overlay */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: bgShift 8s ease infinite alternate;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+@keyframes bgShift {
+  from { background-position: 0% 0%; }
+  to   { background-position: 100% 100%; }
+}
+
+/* Glassmorphic login container */
+.login-container {
+    background-image: 
+    linear-gradient(rgba(223, 233, 243, 0.9), rgba(255, 255, 255, 0.9));
+    background: url('/image.jpeg') url('/image1.jpeg');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 400px;
+  padding: 40px 30px;
+  transform: translate(-50%, -50%);
+  background: var(--form-bg);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(var(--form-blur));
+  border: 1px solid rgba(255,255,255,0.4);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.login-container:hover {
+  transform: translate(-50%, -52%) scale(1.02);
+  box-shadow: 0 12px 48px rgba(0,0,0,0.15);
+}
+
+/* Form title underline animation */
+.login-container h2 {
+  margin: 0 0 30px;
+  text-align: center;
+  color: var(--text-base);
+  font-size: 1.8rem;
+  position: relative;
+}
+.login-container h2::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+  border-radius: 2px;
+  margin: 8px auto 0;
+  transition: width 0.8s ease-out;
+}
+.login-container:hover h2::after {
+  width: 60px;
+}
+
+/* Labels */
+.login-container label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text-base);
+  font-weight: 500;
+}
+
+/* Inputs & selects with glass effect */
+.login-container input,
+.login-container select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--form-glass);
+  color: var(--text-base);
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+  transition: 
+    background var(--transition), 
+    box-shadow var(--transition), 
+    transform var(--transition);
+}
+.login-container input:focus,
+.login-container select:focus {
+  outline: none;
+  background: rgba(255,255,255,0.6);
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(76,175,80,0.3);
+}
+.login-container input:valid {
+  border: 2px solid #81c784;
+  box-shadow: 0 0 8px rgba(129,199,132,0.4);
+}
+
+/* Custom select arrow */
+.login-container select {
+  appearance: none;
+  padding-right: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23777' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px;
+}
+
+/* Submit button with gradient */
+.login-container button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+.login-container button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #43a047, #5aa65e);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(67,160,71,0.4);
+}
+.login-container button:disabled {
+  background: #c8e6c9;
+  cursor: not-allowed;
+}
+
+/* Error shake effect */
+.login-container .error-message {
+  color: var(--error-color);
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 500;
+  animation: shake 0.4s ease;
+}
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  25%,75% { transform: translateX(-5px); }
+  50%      { transform: translateX(5px); }
+}
+
+/* Footer links */
+.login-container p {
+  margin-top: 24px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.login-container a {
+  color: var(--accent-end);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+.login-container a:hover {
+  color: #558b2f;
+  text-decoration: underline;
+}
+
+/* Optional: Login Image Styling (if needed inside form) */
+.login-container img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.login-container img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}

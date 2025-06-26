@@ -1,0 +1,98 @@
+.manage-owner-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px 36px;
+  background: #fdfdfd;
+  border-radius: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.manage-owner-container h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1f2f46;
+}
+
+.owner-card {
+  background: #f0f6ff;
+  border: 1px solid #cdddf5;
+  padding: 20px 24px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.owner-card:hover {
+  background: #e6f0ff;
+  transform: translateY(-2px);
+}
+
+.owner-card p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.owner-card strong {
+  color: #0056b3;
+  font-weight: 600;
+}
+
+.error-message {
+  color: #d93025;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.loading-message {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.add-owner-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-owner-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+.home-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #125ea3;
+}

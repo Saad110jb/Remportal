@@ -1,0 +1,112 @@
+.dashboard-settings {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  color: #222;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-settings.dark {
+  background: #1e1e2f;
+  color: #f1f1f1;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-toggle {
+  padding: 8px 12px;
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #234e7e;
+}
+
+.password-form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.password-form input:focus {
+  border-color: #2b6cb0;
+  outline: none;
+}
+
+.change-btn,
+.logout-btn {
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.change-btn {
+  background-color: #2b6cb0;
+  color: white;
+}
+
+.change-btn:hover {
+  background-color: #234e7e;
+}
+
+.logout-btn {
+  background-color: #c53030;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #9b2c2c;
+}
+
+.success {
+  color: green;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.error {
+  color: red;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.dashboard-settings.dark input,
+.dashboard-settings.dark .change-btn,
+.dashboard-settings.dark .logout-btn {
+  background-color: #2e2e3e;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+.dashboard-settings.dark input:focus {
+  border-color: #6b8df2;
+}
+
+.dashboard-settings.dark .change-btn:hover {
+  background-color: #3f5ea9;
+}
+
+.dashboard-settings.dark .logout-btn:hover {
+  background-color: #a22;
+}

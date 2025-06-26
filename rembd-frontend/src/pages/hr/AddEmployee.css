@@ -1,0 +1,150 @@
+/* Full viewport container */
+.add-employee-form {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/* Form wrapper */
+.add-employee-form form {
+  width: 100%;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 30px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Header */
+.add-employee-form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #1e2a38;
+  font-weight: 600;
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+/* Label */
+.add-employee-form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #2f3d4c;
+}
+
+/* Inputs and selects */
+.add-employee-form input,
+.add-employee-form select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #fdfdfd;
+  transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s ease-in-out;
+}
+
+/* Hover & focus effects */
+.add-employee-form input:hover,
+.add-employee-form select:hover {
+  background-color: #f0f6ff;
+}
+
+.add-employee-form input:focus,
+.add-employee-form select:focus {
+  border-color: #4c8bf5;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(76, 139, 245, 0.2);
+  outline: none;
+}
+
+/* Submit button */
+.add-employee-form button {
+  grid-column: span 2;
+  padding: 12px;
+  background-color: #4c8bf5;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.add-employee-form button:hover {
+  background-color: #3367d6;
+  transform: translateY(-2px);
+}
+
+/* Messages */
+.add-employee-form p {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.success {
+  color: #28a745;
+}
+
+.error {
+  color: #dc3545;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .add-employee-form form {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    max-height: 95vh;
+    overflow-y: auto;
+  }
+
+  .add-employee-form h2 {
+    font-size: 20px;
+  }
+}
+/* Ensure consistent base styles */
+.add-employee-form input[type="date"],
+.add-employee-form select {
+  appearance: none; /* Remove browser-specific styles */
+  background-color: #fdfdfd;
+  color: #1e2a38;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+/* Hover and focus styles */
+.add-employee-form input[type="date"]:hover,
+.add-employee-form select:hover {
+  background-color: #f0f6ff;
+}
+
+.add-employee-form input[type="date"]:focus,
+.add-employee-form select:focus {
+  border-color: #4c8bf5;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(76, 139, 245, 0.2);
+  outline: none;
+}

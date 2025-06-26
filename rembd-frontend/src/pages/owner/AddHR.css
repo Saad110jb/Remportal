@@ -1,0 +1,63 @@
+/* Container base */
+.add-hr-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Labels */
+.add-hr-container label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Inputs and Button Shared */
+.add-hr-container input,
+.add-hr-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Inputs specifically */
+.add-hr-container input {
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-hr-container input:focus {
+  border-color: #3f51b5;
+  box-shadow: 0 0 6px rgba(63, 81, 181, 0.25);
+  outline: none;
+}
+
+/* Button styling */
+.add-hr-container button {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-hr-container button:hover {
+  background-color: #303f9f;
+}
+
+/* Disabled button */
+.add-hr-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,102 @@
+.addon-management-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+}
+
+.addon-management-container h2 {
+  margin-bottom: 20px;
+  color: #2e8b57;
+}
+
+.addon-management-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.addon-management-container input,
+.addon-management-container textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.addon-management-container button {
+  background-color: #2e8b57;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.addon-management-container button:hover {
+  background-color: #237a4c;
+}
+
+.addon-list {
+  margin-top: 20px;
+}
+
+.addon-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.addon-item {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addon-actions button {
+  margin-left: 10px;
+  background-color: #555;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addon-actions button:hover {
+  opacity: 0.8;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.addon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}

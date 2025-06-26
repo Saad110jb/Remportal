@@ -1,0 +1,350 @@
+/* Container */
+.manage-flat-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* Header */
+.manage-flat-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+/* Top Actions */
+.top-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.home-btn,
+.add-flat-btn,
+.export-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover,
+.add-flat-btn:hover,
+.export-button:hover {
+  background-color: #125ea3;
+}
+
+/* Search bar */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccd6dd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+/* Messages */
+.flat-message {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.flat-message.error {
+  color: #e74c3c;
+}
+
+.flat-message.success {
+  color: #27ae60;
+}
+
+/* Flats list */
+.flat-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.flat-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flat-details strong {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.flat-details p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+/* Buttons */
+.flat-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-btn,
+.delete-btn {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Modal Overlay */
+.modal-overlay1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 62, 80, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Box */
+.modal-box1 {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  width: 550px;
+  max-width: 95vw;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.4s ease forwards;
+  color: #2c3e50;
+}
+
+/* Modal header */
+.modal-box1 h3 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Form grid for inputs */
+.row-form1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.row-form1 .form-group2 {
+  flex: 1 1 48%;
+  min-width: 160px;
+}
+
+.row-form1.full-width .form-group2 {
+  flex: 1 1 100%;
+}
+
+/* Individual form group */
+.form-group2 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.form-group2 label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #34495e;
+}
+
+/* Inputs & selects */
+.form-group2 input,
+.form-group2 select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1.8px solid #ccd6dd;
+  border-radius: 8px;
+  color: #000;
+  transition: border-color 0.3s ease;
+}
+
+.form-group2 input:focus,
+.form-group2 select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Modal buttons container */
+.modal-actions1 {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Save and Cancel buttons */
+.save-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  min-width: 110px;
+  text-align: center;
+}
+
+.save-btn {
+  background-color: #27ae60;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #219150;
+  transform: scale(1.05);
+}
+
+.cancel-btn {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+.cancel-btn:hover {
+  background-color: #a7b1b8;
+  transform: scale(1.05);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 8px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pagination button:hover {
+  background: #e6e6e6;
+}
+
+.pagination button.active {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    background-color: rgba(44, 62, 80, 0);
+  }
+  to {
+    background-color: rgba(44, 62, 80, 0.6);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .flat-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .flat-list {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-box1 {
+    width: 95vw;
+    padding: 15px;
+  }
+
+  .row-form1 .form-group2 {
+    flex: 1 1 100%;
+  }
+
+  .form-group2 input,
+  .form-group2 select {
+    font-size: 13px;
+    padding: 7px 9px;
+  }
+
+  .modal-actions2 {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

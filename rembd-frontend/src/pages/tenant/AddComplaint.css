@@ -1,0 +1,75 @@
+.add-complaint-container {
+  background: linear-gradient(to right, #ffffff, #f4f6fb);
+  padding: 40px 30px;
+  border-radius: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 40px auto;
+  transition: all 0.3s ease-in-out;
+  border-left: 8px solid #007bff;
+}
+
+.add-complaint-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.add-complaint-container input,
+.add-complaint-container textarea,
+.add-complaint-container select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 8px 0 20px;
+  border-radius: 8px;
+  border: 1px solid #d0d4db;
+  background-color: #fdfdfd;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.add-complaint-container input:focus,
+.add-complaint-container textarea:focus,
+.add-complaint-container select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.add-complaint-container textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.add-complaint-container button {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.add-complaint-container button:hover {
+  background: linear-gradient(to right, #0056b3, #003f8a);
+}
+
+.add-complaint-container p {
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .add-complaint-container {
+    padding: 25px 20px;
+    margin: 20px;
+  }
+}
